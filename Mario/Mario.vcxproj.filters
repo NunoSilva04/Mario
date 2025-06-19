@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\D3D">
+      <UniqueIdentifier>{180d515d-ff56-4b24-ac8b-74e6fdfd9865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\D3D\MainMenu">
+      <UniqueIdentifier>{85bdccea-3ee0-4315-be17-dded2fe6ca23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\D3D\Game">
+      <UniqueIdentifier>{d209a658-8768-45ee-a99f-72df88fd1fd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MainMenu">
+      <UniqueIdentifier>{7b83620c-bcf8-4369-aa2f-7790c47ab367}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Main Menu">
+      <UniqueIdentifier>{b262b7bf-4957-4d53-82b3-a25a45a48185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Main Menu\SuperMarioBrosTitle">
+      <UniqueIdentifier>{72289038-7825-4cc6-98e3-df38ec7dfbf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Main Menu\MainMenuBackGround">
+      <UniqueIdentifier>{e813bb9c-1e79-4e22-8ed1-c7d00d72c3d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Main Menu\Coin Title">
+      <UniqueIdentifier>{bebe5835-80c7-4b34-bd74-fc49f18ce261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Main Menu\OptionCursor">
+      <UniqueIdentifier>{665e7423-36f4-4c66-9570-f18df9e3b306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Main Menu\MarioMainMenu">
+      <UniqueIdentifier>{eabfb882-6753-4a45-8e2f-1ff7fb7835be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{dbfd89da-eead-4b6e-bafb-286d0a51ae19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Game">
+      <UniqueIdentifier>{115b49d4-e79f-496d-b206-23a551835e18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Game\Blocks">
+      <UniqueIdentifier>{6f33027d-c427-4ca5-a048-b2a48b076739}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\D3D\Game\Mario">
+      <UniqueIdentifier>{b12cc3f7-e3e1-44c5-9eb4-4a5a11d570ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Game\Mario">
+      <UniqueIdentifier>{8c587e71-f1b4-43e2-8897-a3d87c1a7ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Background">
+      <UniqueIdentifier>{ab4f2e63-6dcd-4c02-bece-1fb7bb77468b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\D3D\Game\Background">
+      <UniqueIdentifier>{9a5e0a85-3f61-4215-baa6-f80f7ae38d46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Game\Background">
+      <UniqueIdentifier>{ac46e091-df7d-4319-be3d-1dae4015e093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\GameObjects">
+      <UniqueIdentifier>{4e38dedd-27f7-45b7-ac6d-38c35ec3adbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Grid">
+      <UniqueIdentifier>{b0e9b261-b69d-4566-bc24-e2ca6af2a80c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\GameObjects\Blocks">
+      <UniqueIdentifier>{69b765fe-faef-419c-b7f8-bb682edb458e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\D3D\Game\GameObjects">
+      <UniqueIdentifier>{03c6e086-92c6-44f9-ad89-f096a94e7c8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\D3D\Game\GameObjects\Blocks">
+      <UniqueIdentifier>{44f29bc2-d3bf-480f-8f96-dc21f7bb390b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\GameObjects\PowerUps">
+      <UniqueIdentifier>{fbea00b0-3378-43bc-b7ee-0afe6669d88d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D3D.cpp">
+      <Filter>Source Files\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>Source Files\D3D\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="SuperMarioBrosTitle.cpp">
+      <Filter>Source Files\D3D\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuBackGround.cpp">
+      <Filter>Source Files\D3D\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Coin_Title.cpp">
+      <Filter>Source Files\D3D\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionCursor.cpp">
+      <Filter>Source Files\D3D\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="MarioMainMenu.cpp">
+      <Filter>Source Files\D3D\MainMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\D3D\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Mario.cpp">
+      <Filter>Source Files\D3D\Game\Mario</Filter>
+    </ClCompile>
+    <ClCompile Include="MarioUtilFunc.cpp">
+      <Filter>Source Files\D3D\Game\Mario</Filter>
+    </ClCompile>
+    <ClCompile Include="Background.cpp">
+      <Filter>Source Files\D3D\Game\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="DarkGreenBush.cpp">
+      <Filter>Source Files\D3D\Game\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="LightGreenBush.cpp">
+      <Filter>Source Files\D3D\Game\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="Clouds.cpp">
+      <Filter>Source Files\D3D\Game\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="Castle.cpp">
+      <Filter>Source Files\D3D\Game\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.cpp">
+      <Filter>Source Files\D3D\Game\GameObjects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="FloorTile.cpp">
+      <Filter>Source Files\D3D\Game\GameObjects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="Id3d.cpp">
+      <Filter>Source Files\D3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectFactory.cpp">
+      <Filter>Source Files\D3D\Game\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Source Files\D3D\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="DarkFloorTile.cpp">
+      <Filter>Source Files\D3D\Game\GameObjects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="Brick.cpp">
+      <Filter>Source Files\D3D\Game\GameObjects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="MysteryBlock.cpp">
+      <Filter>Source Files\D3D\Game\GameObjects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="DarkBrick.cpp">
+      <Filter>Source Files\D3D\Game\GameObjects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="UnbreakableBrick.cpp">
+      <Filter>Source Files\D3D\Game\GameObjects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="Pipe.cpp">
+      <Filter>Source Files\D3D\Game\GameObjects\Blocks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AllHeaderFiles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>Header Files\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="SuperMarioBrosTitle.h">
+      <Filter>Header Files\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuBackGround.h">
+      <Filter>Header Files\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Coin_Title.h">
+      <Filter>Header Files\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionCursor.h">
+      <Filter>Header Files\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MarioMainMenu.h">
+      <Filter>Header Files\MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Mario.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Background.h">
+      <Filter>Header Files\Game\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="DarkGreenBush.h">
+      <Filter>Header Files\Game\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="LightGreenBush.h">
+      <Filter>Header Files\Game\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="Clouds.h">
+      <Filter>Header Files\Game\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="Castle.h">
+      <Filter>Header Files\Game\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjects.h">
+      <Filter>Header Files\Game\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectFactory.h">
+      <Filter>Header Files\Game\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameObjects.h">
+      <Filter>Header Files\Game\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Header Files\Game\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="IGrid.h">
+      <Filter>Header Files\Game\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="Id3d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Block.h">
+      <Filter>Header Files\Game\GameObjects\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="FloorTile.h">
+      <Filter>Header Files\Game\GameObjects\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="DarkFloorTile.h">
+      <Filter>Header Files\Game\GameObjects\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Brick.h">
+      <Filter>Header Files\Game\GameObjects\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="MysteryBlock.h">
+      <Filter>Header Files\Game\GameObjects\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="DarkBrick.h">
+      <Filter>Header Files\Game\GameObjects\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="UnbreakableBrick.h">
+      <Filter>Header Files\Game\GameObjects\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Pipe.h">
+      <Filter>Header Files\Game\GameObjects\Blocks</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="SuperMarioBrosTitle.png">
+      <Filter>Resource Files\Main Menu\SuperMarioBrosTitle</Filter>
+    </Image>
+    <Image Include="MainMenuBg.png">
+      <Filter>Resource Files\Main Menu\MainMenuBackGround</Filter>
+    </Image>
+    <Image Include="Coin_Title.png">
+      <Filter>Resource Files\Main Menu\Coin Title</Filter>
+    </Image>
+    <Image Include="OptionCursor.png">
+      <Filter>Resource Files\Main Menu\OptionCursor</Filter>
+    </Image>
+    <Image Include="marioMainMenu.png">
+      <Filter>Resource Files\Main Menu\MarioMainMenu</Filter>
+    </Image>
+    <Image Include="miniMario.png">
+      <Filter>Resource Files\Game\Mario</Filter>
+    </Image>
+    <Image Include="SmallDarkGreenBush.png">
+      <Filter>Resource Files\Game\Background</Filter>
+    </Image>
+    <Image Include="TallDarkGreenBush.png">
+      <Filter>Resource Files\Game\Background</Filter>
+    </Image>
+    <Image Include="BigLightGreenBush.png">
+      <Filter>Resource Files\Game\Background</Filter>
+    </Image>
+    <Image Include="SmallLightGreenBush.png">
+      <Filter>Resource Files\Game\Background</Filter>
+    </Image>
+    <Image Include="BigCloud.png">
+      <Filter>Resource Files\Game\Background</Filter>
+    </Image>
+    <Image Include="SmallCloud.png">
+      <Filter>Resource Files\Game\Background</Filter>
+    </Image>
+    <Image Include="BlockTextures.png">
+      <Filter>Resource Files\Game\Blocks</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="SuperMarioBrosTitleVertexShader.hlsl">
+      <Filter>Resource Files\Main Menu\SuperMarioBrosTitle</Filter>
+    </FxCompile>
+    <FxCompile Include="SuperMarioBrosTitlePixelShader.hlsl">
+      <Filter>Resource Files\Main Menu\SuperMarioBrosTitle</Filter>
+    </FxCompile>
+    <FxCompile Include="MainMenuBgVertexShader.hlsl">
+      <Filter>Resource Files\Main Menu\MainMenuBackGround</Filter>
+    </FxCompile>
+    <FxCompile Include="MainMenuBgPixelShader.hlsl">
+      <Filter>Resource Files\Main Menu\MainMenuBackGround</Filter>
+    </FxCompile>
+    <FxCompile Include="CoinTitlePixelShader.hlsl">
+      <Filter>Resource Files\Main Menu\Coin Title</Filter>
+    </FxCompile>
+    <FxCompile Include="CoinTitleVertexShader.hlsl">
+      <Filter>Resource Files\Main Menu\Coin Title</Filter>
+    </FxCompile>
+    <FxCompile Include="OptionCursorPixelShader.hlsl">
+      <Filter>Resource Files\Main Menu\OptionCursor</Filter>
+    </FxCompile>
+    <FxCompile Include="OptionCursorVertexShader.hlsl">
+      <Filter>Resource Files\Main Menu\OptionCursor</Filter>
+    </FxCompile>
+    <FxCompile Include="MarioMainMenuVertexShader.hlsl">
+      <Filter>Resource Files\Main Menu\MarioMainMenu</Filter>
+    </FxCompile>
+    <FxCompile Include="MarioMainMenuPixelShader.hlsl">
+      <Filter>Resource Files\Main Menu\MarioMainMenu</Filter>
+    </FxCompile>
+    <FxCompile Include="MarioVertexShader.hlsl">
+      <Filter>Resource Files\Game\Mario</Filter>
+    </FxCompile>
+    <FxCompile Include="MarioPixelShader.hlsl">
+      <Filter>Resource Files\Game\Mario</Filter>
+    </FxCompile>
+    <FxCompile Include="BackgroundVertexShader.hlsl">
+      <Filter>Resource Files\Game\Background</Filter>
+    </FxCompile>
+    <FxCompile Include="BackgroundPixelShader.hlsl">
+      <Filter>Resource Files\Game\Background</Filter>
+    </FxCompile>
+    <FxCompile Include="BlockVertexShader.hlsl">
+      <Filter>Resource Files\Game\Blocks</Filter>
+    </FxCompile>
+    <FxCompile Include="BlockPixelShader.hlsl">
+      <Filter>Resource Files\Game\Blocks</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

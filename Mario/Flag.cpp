@@ -1,24 +1,24 @@
-#include "Castle.h"
+#include "Flag.h"
 
-CASTLE::CASTLE() {
-	objectType = BackgroundObjects::Castle;
+Flag::Flag() {
+	objectType = BackgroundObjects::Flag;
 	instanceBuffer = nullptr;
 	shaderResourceView[0] = nullptr;
 	shaderResourceView[1] = nullptr;
 }
 
-CASTLE::~CASTLE() {
+Flag::~Flag() {
 
 }
 
-void CASTLE::initInstanceBuffer(ID3D11Device* dev) {
+void Flag::initInstanceBuffer(ID3D11Device* dev) {
 	HRESULT hr;
 
 	instanceStruct tempStruct;
 	DirectX::XMMATRIX translationMatrix, scaleMatrix;
 
-	translationMatrix = DirectX::XMMatrixTranslation(102.0f, 0.5f, 0.0f);
-	scaleMatrix = DirectX::XMMatrixScaling(1.0f, 2.0f, 1.0f);
+	translationMatrix = DirectX::XMMatrixTranslation(328.8f, 0.78f, 0.0f);
+	scaleMatrix = DirectX::XMMatrixScaling(0.3f, 2.3f, 1.0f);
 	tempStruct.transformMatrix = DirectX::XMMatrixMultiply(translationMatrix, scaleMatrix);
 	tempStruct.size = 0;
 	instances.push_back(tempStruct);
@@ -41,12 +41,12 @@ void CASTLE::initInstanceBuffer(ID3D11Device* dev) {
 	}
 }
 
-void CASTLE::initShaderResourceView(ID3D11Device* dev){
+void Flag::initShaderResourceView(ID3D11Device* dev) {
 	//shader is the index 0
 	//Shader Resource View
 	HRESULT hr;
 
-	hr = D3DX11CreateShaderResourceViewFromFile(dev, L"Castle.png", nullptr, nullptr, shaderResourceView[0].GetAddressOf(), nullptr);
+	hr = D3DX11CreateShaderResourceViewFromFile(dev, L"Flag.png", nullptr, nullptr, shaderResourceView[0].GetAddressOf(), nullptr);
 	if (FAILED(hr)) {
 		OutputDebugString(L"Couldn't create castle shader resource view\n");
 		PostQuitMessage(0);

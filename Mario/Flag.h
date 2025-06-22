@@ -1,14 +1,14 @@
-#ifndef CASTLE_H_
-#define CASTLE_H_
+#ifndef FLAG_G_
+#define FLAG_G_
 
 #include "Background.h"
 
-class CASTLE : public BACKGROUND {
+class Flag : public BACKGROUND {
 public:
-	CASTLE();
-	~CASTLE();
+	Flag();
+	~Flag();
 	void initInstanceBuffer(ID3D11Device* dev) override;
 	void initShaderResourceView(ID3D11Device* dev) override;
 };
 
-#endif // !CASTLE_H_
+#endif // !FLAG_G_

@@ -24,13 +24,14 @@ public:
 
 private:
 	static ID3D11Device* dev;
-	ID3D11DeviceContext* devCon;
+	static ID3D11DeviceContext* devCon;
 	ID3D11RenderTargetView* renderTargetView;
 	IDXGISwapChain* swapChain;
 	IDXGISwapChain1* swapChain1;
 	bool playGame;
 	int start_timer, end_timer;
 	ID3D11Device* getDevice() override;
+	ID3D11DeviceContext* getDeviceContext() override;
 
 private:
 	MAINMENU MainMenu;

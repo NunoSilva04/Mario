@@ -73,6 +73,12 @@ void LIGHTGREENBUSH::initInstanceBuffer(ID3D11Device* dev) {
 	tempStruct.transformMatrix = DirectX::XMMatrixMultiply(translationMatrix, scaleMatrix);
 	tempStruct.size = 0;
 	instances.push_back(tempStruct);
+	//4
+	translationMatrix = DirectX::XMMatrixTranslation(275.0f, -1.5f, 0.0f);
+	scaleMatrix = DirectX::XMMatrixScaling(0.3f, 0.4f, 1.0f);
+	tempStruct.transformMatrix = DirectX::XMMatrixMultiply(translationMatrix, scaleMatrix);
+	tempStruct.size = 0;
+	instances.push_back(tempStruct);
 
 	D3D11_BUFFER_DESC instanceBufferDesc;
 	ZeroMemory(&instanceBufferDesc, sizeof(D3D11_BUFFER_DESC));

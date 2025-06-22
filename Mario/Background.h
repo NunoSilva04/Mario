@@ -10,6 +10,7 @@ enum class BackgroundObjects {
 	LightGreenBush,
 	Clouds,
 	Castle,
+	Flag,
 };
 
 class BACKGROUND {

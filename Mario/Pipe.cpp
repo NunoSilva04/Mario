@@ -22,7 +22,7 @@ void Pipe::initInstanceBuffer(ID3D11Device* dev) {		// 6 Total Instances
 	float offsetX = 13.0f, offsetY = 0.5f;
 	instanceStruct tempInstance;
 
-	//0
+	//0 (small pipe)
 	tempInstance.transformMatrix = DirectX::XMMatrixTranslation(offsetX, offsetY, 0.0f);
 	tempInstance.newUVValues[0] = DirectX::XMFLOAT2(0.142857f * 0, 0.33333f);
 	tempInstance.newUVValues[1] = DirectX::XMFLOAT2(0.142857f * 2, 0.33333f);
@@ -208,6 +208,52 @@ void Pipe::initInstanceBuffer(ID3D11Device* dev) {		// 6 Total Instances
 	tempInstance.newUVValues[2] = DirectX::XMFLOAT2(0.142857f * 0, 1.0f);
 	tempInstance.newUVValues[3] = DirectX::XMFLOAT2(0.142857f * 2, 1.0f);
 	tempInstance.instanceID = 8;
+	tempVec = DirectX::XMLoadFloat3(&v0);
+	tempVec = DirectX::XMVector3Transform(tempVec, tempInstance.transformMatrix);
+	DirectX::XMStoreFloat3(&tempInstance.verticesPos[0], tempVec);
+	tempVec = DirectX::XMLoadFloat3(&v1);
+	tempVec = DirectX::XMVector3Transform(tempVec, tempInstance.transformMatrix);
+	DirectX::XMStoreFloat3(&tempInstance.verticesPos[1], tempVec);
+	tempVec = DirectX::XMLoadFloat3(&v2);
+	tempVec = DirectX::XMVector3Transform(tempVec, tempInstance.transformMatrix);
+	DirectX::XMStoreFloat3(&tempInstance.verticesPos[2], tempVec);
+	tempVec = DirectX::XMLoadFloat3(&v3);
+	tempVec = DirectX::XMVector3Transform(tempVec, tempInstance.transformMatrix);
+	DirectX::XMStoreFloat3(&tempInstance.verticesPos[3], tempVec);
+	instances.push_back(tempInstance);
+	initNumInstances.push_back(tempInstance);
+
+	//9 (small pipe)
+	offsetX = 83.0f; offsetY = 0.5f;
+	tempInstance.transformMatrix = DirectX::XMMatrixTranslation(offsetX, offsetY, 0.0f);
+	tempInstance.newUVValues[0] = DirectX::XMFLOAT2(0.142857f * 0, 0.33333f);
+	tempInstance.newUVValues[1] = DirectX::XMFLOAT2(0.142857f * 2, 0.33333f);
+	tempInstance.newUVValues[2] = DirectX::XMFLOAT2(0.142857f * 0, 1.0f);
+	tempInstance.newUVValues[3] = DirectX::XMFLOAT2(0.142857f * 2, 1.0f);
+	tempInstance.instanceID = 9;
+	tempVec = DirectX::XMLoadFloat3(&v0);
+	tempVec = DirectX::XMVector3Transform(tempVec, tempInstance.transformMatrix);
+	DirectX::XMStoreFloat3(&tempInstance.verticesPos[0], tempVec);
+	tempVec = DirectX::XMLoadFloat3(&v1);
+	tempVec = DirectX::XMVector3Transform(tempVec, tempInstance.transformMatrix);
+	DirectX::XMStoreFloat3(&tempInstance.verticesPos[1], tempVec);
+	tempVec = DirectX::XMLoadFloat3(&v2);
+	tempVec = DirectX::XMVector3Transform(tempVec, tempInstance.transformMatrix);
+	DirectX::XMStoreFloat3(&tempInstance.verticesPos[2], tempVec);
+	tempVec = DirectX::XMLoadFloat3(&v3);
+	tempVec = DirectX::XMVector3Transform(tempVec, tempInstance.transformMatrix);
+	DirectX::XMStoreFloat3(&tempInstance.verticesPos[3], tempVec);
+	instances.push_back(tempInstance);
+	initNumInstances.push_back(tempInstance);
+
+	//10 (small pipe) 
+	offsetX = 93.0f; offsetY = 0.5f;
+	tempInstance.transformMatrix = DirectX::XMMatrixTranslation(offsetX, offsetY, 0.0f);
+	tempInstance.newUVValues[0] = DirectX::XMFLOAT2(0.142857f * 0, 0.33333f);
+	tempInstance.newUVValues[1] = DirectX::XMFLOAT2(0.142857f * 2, 0.33333f);
+	tempInstance.newUVValues[2] = DirectX::XMFLOAT2(0.142857f * 0, 1.0f);
+	tempInstance.newUVValues[3] = DirectX::XMFLOAT2(0.142857f * 2, 1.0f);
+	tempInstance.instanceID = 10;
 	tempVec = DirectX::XMLoadFloat3(&v0);
 	tempVec = DirectX::XMVector3Transform(tempVec, tempInstance.transformMatrix);
 	DirectX::XMStoreFloat3(&tempInstance.verticesPos[0], tempVec);

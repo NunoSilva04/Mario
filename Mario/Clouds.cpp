@@ -29,14 +29,12 @@ void CLOUDS::initInstanceBuffer(ID3D11Device* dev) {
 	tempStruct.transformMatrix = DirectX::XMMatrixMultiply(translationMatrix, scaleMatrix);
 	tempStruct.size = 1;
 	instances.push_back(tempStruct);
-
 	//3
 	translationMatrix = DirectX::XMMatrixTranslation(52.0f, 3.7f, 0.0f);
 	scaleMatrix = DirectX::XMMatrixScaling(0.7f, 0.5f, 1.0f);
 	tempStruct.transformMatrix = DirectX::XMMatrixMultiply(translationMatrix, scaleMatrix);
 	tempStruct.size = 1;
 	instances.push_back(tempStruct);
-
 	//4
 	translationMatrix = DirectX::XMMatrixTranslation(65.0f, 3.90f, 0.0f);
 	scaleMatrix = DirectX::XMMatrixScaling(0.7f, 0.5f, 1.0f);
@@ -45,6 +43,12 @@ void CLOUDS::initInstanceBuffer(ID3D11Device* dev) {
 	instances.push_back(tempStruct);
 	//5
 	translationMatrix = DirectX::XMMatrixTranslation(98.0f, 3.70f, 0.0f);
+	scaleMatrix = DirectX::XMMatrixScaling(0.7f, 0.5f, 1.0f);
+	tempStruct.transformMatrix = DirectX::XMMatrixMultiply(translationMatrix, scaleMatrix);
+	tempStruct.size = 1;
+	instances.push_back(tempStruct);
+	//5
+	translationMatrix = DirectX::XMMatrixTranslation(125.0f, 3.90f, 0.0f);
 	scaleMatrix = DirectX::XMMatrixScaling(0.7f, 0.5f, 1.0f);
 	tempStruct.transformMatrix = DirectX::XMMatrixMultiply(translationMatrix, scaleMatrix);
 	tempStruct.size = 1;
@@ -89,6 +93,18 @@ void CLOUDS::initInstanceBuffer(ID3D11Device* dev) {
 	instances.push_back(tempStruct);
 	//7
 	translationMatrix = DirectX::XMMatrixTranslation(255.0f, 4.0f, 0.0f);
+	scaleMatrix = DirectX::XMMatrixScaling(0.3f, 0.4f, 1.0f);
+	tempStruct.transformMatrix = DirectX::XMMatrixMultiply(translationMatrix, scaleMatrix);
+	tempStruct.size = 0;
+	instances.push_back(tempStruct);
+	//8
+	translationMatrix = DirectX::XMMatrixTranslation(275.0f, 4.25f, 0.0f);
+	scaleMatrix = DirectX::XMMatrixScaling(0.3f, 0.4f, 1.0f);
+	tempStruct.transformMatrix = DirectX::XMMatrixMultiply(translationMatrix, scaleMatrix);
+	tempStruct.size = 0;
+	instances.push_back(tempStruct);
+	//8
+	translationMatrix = DirectX::XMMatrixTranslation(295.0f, 4.0f, 0.0f);
 	scaleMatrix = DirectX::XMMatrixScaling(0.3f, 0.4f, 1.0f);
 	tempStruct.transformMatrix = DirectX::XMMatrixMultiply(translationMatrix, scaleMatrix);
 	tempStruct.size = 0;

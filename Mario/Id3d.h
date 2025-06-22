@@ -5,10 +5,10 @@
 
 class Id3d {
 public:
-	Id3d();
-	~Id3d();
+	virtual ~Id3d() {};
 	static Id3d* createInstance();
 	virtual ID3D11Device* getDevice() = 0;
+	virtual ID3D11DeviceContext* getDeviceContext() = 0;
 };
 
 #endif // !ID3D_H_

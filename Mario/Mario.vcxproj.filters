@@ -85,6 +85,9 @@
     <Filter Include="Header Files\Game\GameObjects\PowerUps">
       <UniqueIdentifier>{fbea00b0-3378-43bc-b7ee-0afe6669d88d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\D3D\Game\GameObjects\PowerUps">
+      <UniqueIdentifier>{1c0fa411-f86a-499d-99b1-e94a6d6e466f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -176,6 +179,9 @@
     </ClCompile>
     <ClCompile Include="Pipe.cpp">
       <Filter>Source Files\D3D\Game\GameObjects\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="Flag.cpp">
+      <Filter>Source Files\D3D\Game\Background</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -278,6 +284,12 @@
     <ClInclude Include="Pipe.h">
       <Filter>Header Files\Game\GameObjects\Blocks</Filter>
     </ClInclude>
+    <ClInclude Include="Flag.h">
+      <Filter>Header Files\Game\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="PowerUps.h">
+      <Filter>Header Files\Game\GameObjects\PowerUps</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="SuperMarioBrosTitle.png">
@@ -318,6 +330,12 @@
     </Image>
     <Image Include="BlockTextures.png">
       <Filter>Resource Files\Game\Blocks</Filter>
+    </Image>
+    <Image Include="Castle.png">
+      <Filter>Resource Files\Game\Background</Filter>
+    </Image>
+    <Image Include="Flag.png">
+      <Filter>Resource Files\Game\Background</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,5 @@
 #include "GameObjectFactory.h"
 #include "Block.h"
-#include "FloorTile.h"
 
 std::shared_ptr<GameObjects> GameObjectFactory::createGameObject(ObjectTypes objectType, const std::string specificType) {
 	switch (objectType) {

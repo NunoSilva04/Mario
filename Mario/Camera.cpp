@@ -39,6 +39,12 @@ void CAMERA::initCamera(ID3D11Device* dev) {
 	CamProjection = DirectX::XMMatrixPerspectiveFovLH(DirectX::XMConvertToRadians(45.0f), (float)width / height, 0.1f, 100.0f);
 }
 
+void CAMERA::updateCamera(ID3D11DeviceContext* devCon) {
+	CamPosition = DirectX::XMVectorSet(0.0f, 0.0f, -3.f, 0.0f);
+	CamTarget = DirectX::XMVectorSet(0.0f, 0.0f, 0.0f, 0.0f);
+	CamView = DirectX::XMMatrixLookAtLH(CamPosition, CamTarget, CamUp);
+}
+
 void CAMERA::updateCamera(ID3D11DeviceContext* devCon, MARIO Mario) {
 	if (Mario.currMarioInfo.bottomRight.x >= midCameraPosition) {
 		midCameraPosition = Mario.currMarioInfo.bottomRight.x;

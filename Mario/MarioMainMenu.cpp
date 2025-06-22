@@ -140,6 +140,10 @@ void MARIOMAINMENU::updateMarioMainMenu(ID3D11DeviceContext* devCon) {
 	marioMainMenuWorld = DirectX::XMMatrixTranslation(1.1f, 0.6f, 0.0f);
 }
 
+void MARIOMAINMENU::updateMarioMainMenu() {
+	marioMainMenuWorld = DirectX::XMMatrixTranslation(0.0f, 0.0f, 0.0f);
+}
+
 void MARIOMAINMENU::renderMarioMainMenu(ID3D11DeviceContext* devCon){
 	devCon->VSSetShader(marioMainMenuVertexShader, 0, 0);
 	devCon->PSSetShader(marioMainMenuPixelShader, 0, 0);

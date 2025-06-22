@@ -320,6 +320,29 @@ void MysteryBlock::initInstanceBuffer(ID3D11Device* dev) {
 	instances.push_back(tempInstance);
 	initNumInstances.push_back(tempInstance);
 
+	//13
+	offsetX = 86.0f; offsetY = 1.4f;
+	tempInstance.transformMatrix = DirectX::XMMatrixTranslation(offsetX, offsetY, 0.0f);
+	tempInstance.newUVValues[0] = DirectX::XMFLOAT2(0.142857f * 4, 0.0f);
+	tempInstance.newUVValues[1] = DirectX::XMFLOAT2(0.142857f * 5, 0.0f);
+	tempInstance.newUVValues[2] = DirectX::XMFLOAT2(0.142857f * 4, 0.33333f);
+	tempInstance.newUVValues[3] = DirectX::XMFLOAT2(0.142857f * 5, 0.33333f);
+	tempInstance.instanceID = 13;
+	tempVec = DirectX::XMLoadFloat3(&v0);
+	tempVec = DirectX::XMVector3Transform(tempVec, tempInstance.transformMatrix);
+	DirectX::XMStoreFloat3(&tempInstance.verticesPos[0], tempVec);
+	tempVec = DirectX::XMLoadFloat3(&v1);
+	tempVec = DirectX::XMVector3Transform(tempVec, tempInstance.transformMatrix);
+	DirectX::XMStoreFloat3(&tempInstance.verticesPos[1], tempVec);
+	tempVec = DirectX::XMLoadFloat3(&v2);
+	tempVec = DirectX::XMVector3Transform(tempVec, tempInstance.transformMatrix);
+	DirectX::XMStoreFloat3(&tempInstance.verticesPos[2], tempVec);
+	tempVec = DirectX::XMLoadFloat3(&v3);
+	tempVec = DirectX::XMVector3Transform(tempVec, tempInstance.transformMatrix);
+	DirectX::XMStoreFloat3(&tempInstance.verticesPos[3], tempVec);
+	instances.push_back(tempInstance);
+	initNumInstances.push_back(tempInstance);
+
 	D3D11_BUFFER_DESC instanceBufferDesc;
 	ZeroMemory(&instanceBufferDesc, sizeof(D3D11_BUFFER_DESC));
 	instanceBufferDesc.ByteWidth = instances.size() * sizeof(instanceStruct);

@@ -40,6 +40,9 @@ void MAINMENU::initMainMenu(ID3D11Device* dev, ID3D11DeviceContext* devCon) {
 }
 
 bool MAINMENU::updateMainMenu(ID3D11DeviceContext* devCon, float frame_time, bool playGame) {
+	Camera.updateCamera(devCon);
+	MarioMainMenu.updateMarioMainMenu();
+
 	PLAYER& player = PLAYER::getInstance();
 	OPTIONCURSOR& OptionCursor = OPTIONCURSOR::getInstance();
 
@@ -99,7 +102,7 @@ void MAINMENU::renderMainMenu(ID3D11DeviceContext *devCon, int time) {
 	//Time
 	superMarioBros_SpriteFont->DrawString(superMarioBros_SpriteBatch, L"Time", DirectX::XMFLOAT2(1400, 80),
 		DirectX::SimpleMath::Color(1.0f, 1.0f, 1.0f, 1.0f), 0);
-	superMarioBros_SpriteFont->DrawString(superMarioBros_SpriteBatch, timeString.str().c_str(), DirectX::XMFLOAT2(1450, 110),
+	superMarioBros_SpriteFont->DrawString(superMarioBros_SpriteBatch, L"0", DirectX::XMFLOAT2(1450, 110),
 		DirectX::SimpleMath::Color(1.0f, 1.0f, 1.0f, 1.0f), 0);
 	
 	//1985 NINTENDO

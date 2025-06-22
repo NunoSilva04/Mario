@@ -3,9 +3,9 @@
 #include "Player.h"
 
 ID3D11Device* D3D::dev = nullptr;
+ID3D11DeviceContext* D3D::devCon = nullptr;
 
 D3D::D3D() {
-	devCon = nullptr;
 	renderTargetView = nullptr;
 	swapChain = nullptr;
 	swapChain1 = nullptr;
@@ -239,7 +239,7 @@ void D3D::initD3D(HWND hWnd) {
 	Camera.initCamera(dev);
 	//Initialize all main menu
 	MainMenu.initMainMenu(dev, devCon);
-	Game.initGame(dev);
+	Game.initGame(dev, devCon);
 
 	PLAYER& player = PLAYER::getInstance();
 	if (!player.checkFileExists()) {
@@ -281,7 +281,7 @@ void D3D::renderD3D(int time) {
 		}
 		else {	//Play Game
 			devCon->ClearRenderTargetView(renderTargetView, DirectX::SimpleMath::Color(0.3608f, 0.5804f, 0.9882f, 1.0f));
-			Game.renderGame(devCon);
+			Game.renderGame(devCon, time);
 		}
 	}
 
@@ -302,4 +302,8 @@ void D3D::cleanD3D() {
 
 ID3D11Device* D3D::getDevice() {
 	return dev;
+}
+
+ID3D11DeviceContext* D3D::getDeviceContext() {
+	return devCon;
 }

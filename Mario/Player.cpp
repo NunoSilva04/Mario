@@ -109,7 +109,7 @@ void PLAYER::resetPlayerStat() {
 		player1.numLives = 3;
 		newFile << "Number of Coins: " << player1.num_coins << "\n";
 		newFile << "Score: " << player1.score << "\n";
-		newFile << "Number of Lives: " << player1.numLives << L"\n";
+		newFile << "Number of Lives: " << player1.numLives << "\n";
 	}
 
 	//Close new file

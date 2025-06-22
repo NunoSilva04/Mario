@@ -5,9 +5,11 @@
 #include <fstream>
 
 class MAINMENU;
+class GAME;
 
 class PLAYER {
 	friend class MAINMENU;
+	friend class GAME;
 
 public:
 	static PLAYER& getInstance() {

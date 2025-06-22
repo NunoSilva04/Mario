@@ -2,6 +2,8 @@
 #include "DarkGreenBush.h"
 #include "LightGreenBush.h"
 #include "Clouds.h"
+#include "Flag.h"
+#include "Castle.h"
 
 namespace wrl = Microsoft::WRL;
 
@@ -32,8 +34,12 @@ std::unique_ptr<BACKGROUND> BACKGROUND::createBackgroundObjects(BackgroundObject
 		return std::make_unique<CLOUDS>();
 		break;
 
+	case BackgroundObjects::Flag:
+		return std::make_unique<Flag>();
+		break;
+
 	case BackgroundObjects::Castle:
-		
+		return std::make_unique<CASTLE>();
 		break;
 
 	default:

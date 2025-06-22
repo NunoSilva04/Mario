@@ -30,6 +30,7 @@ public:
 	void initMarioMainMenuVertexBuffer(ID3D11Device* dev);
 	void initMarioMainMenuIndexBuffer(ID3D11Device* dev);
 	void initMarioMainMenuShaderResourceView(ID3D11Device* dev);
+	void updateMarioMainMenu();
 	void updateMarioMainMenu(ID3D11DeviceContext* devCon);
 	void renderMarioMainMenu(ID3D11DeviceContext* devCon);
 	void cleanMarioMainMenu();

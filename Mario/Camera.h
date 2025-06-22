@@ -16,6 +16,7 @@ class CAMERA {
 public:
 	CAMERA();
 	void initCamera(ID3D11Device* dev);
+	void updateCamera(ID3D11DeviceContext* devCon);
 	void updateCamera(ID3D11DeviceContext* devCon, MARIO Mario);
 	void renderCamera(ID3D11DeviceContext* devCon);
 	void cleanCamera();
